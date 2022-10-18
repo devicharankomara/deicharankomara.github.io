@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(68, 68, 67);
+    margin: 0px;
+    box-shadow: 0 1px 5px rgb(45, 45, 45);
+    position: fixed;
+     opacity: 90%;
+   
+
+
+}
+#icon{
+    height: 10px;
+   
+}
+
+#logo{
+    height: 80px;
+    margin-left: 50px;
+    width: 80px;
+    background-color: rgb(68, 68, 67) ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 120px;
+}
+#navbar ul li{
+    padding: 0 20;
+    font-size: 20px;
+    position: relative;
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(202, 200, 141);
+    font-weight: 900;
+    transition:300ms ease;
+}
+#navbar ul li a:hover,
+ #navbar ul li a.active{
+    color: rgb(243, 255, 130);
+}
+#navbar ul li a.active::after,
+#navbar ul li a:hover::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(245, 202, 46);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}    
+#hero{
+    background-image: url(https://www.cnet.com/a/img/resize/b05fc769c835195368d568a2a449643a104135ad/2019/02/21/bb0ec538-6bb9-4c7a-97b4-8eeea69a8ff1/abyss-diana-phi.jpg?auto=webp&fit=crop&height=675&width=1200);
+    margin: 0px;
+   background-repeat: no-repeat;
+   background-position: top;
+background-size: 100%;
+height: 100%;
+ 
+
+}
+.hero h2{
+    padding: 150px 30px 10px 30px;
+    font-size: 90px;
+    font-weight: 900;
+    color: rgb(255, 230, 107);
+}
+.hero p{
+    font-size: 30px;
+    padding: 20px 30px;
+    color: rgb(221, 220, 213);
+    font-weight: 900;
+}
+button{
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: monospace;
+    margin:50px 0px 0px 200px ;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(195, 194, 177);
+    background-color: rgb(255, 237, 164);
+    transition: 300ms ease;
+}
+button:hover{
+    background-color: rgb(68, 68, 67);
+    color:  rgb(210, 210, 210);
+}
+
+#featured h2{
+    padding: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(81, 81, 81);
+}
+#featured p{
+    text-align: center;
+    font-family: monospace;
+    color: rgb(111, 111, 109);
+    font-size: 17px
+}
+#featured{
+    padding-bottom: 50px;
+   
+}
+.featured{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.product1 a img{
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    padding: 3px;
+    
+    border-radius: 10px;
+
+}
+.product1{
+    display: grid;
+    display: inline-block;
+    background-color: rgb(68, 68, 67);
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(154, 152, 152);
+    transition: 300ms ease;
+}
+.product1 p{
+    padding: 0 10px;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 10px;
+}
+#brand{
+    color: rgb(172, 172, 172);
+}
+#productname{
+    color: rgb(164, 135, 5);
+    font-size: 20px;
+}
+#price{
+    font-size: 17px;
+    color: rgb(171, 143, 2);
+    margin: 10px;
+}
+
+.product1:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 10px;
+    color: white;
+}
+#banner{
+ background-image: url(https://www.audio-technica.com/en-gb/media/catalog/category/Audiophile_Headphones_Cat_Banner_Desktop.jpg);
+  
+   
+}  
+
+#banner h3{
+    font-size: 50px;
+    padding: 50px;
+    padding-top: 130px;
+    color: aliceblue;
+}
+#banner button{
+    margin-bottom: 100px;
+    margin-left: 600px;
+    font-size: 30px;
+}
+#banner p{
+    font-size: 25px;
+    color: azure;
+    padding-left: 50px;
+    
+    
+}
+#bannerdiv{
+    padding: 50px;
+    background-color:antiquewhite ;
+}
+.textimg{
+    height: 400px;
+    padding:0 7px ;
+}
+
+#textbanner{
+    
+    text-align: center;
+}
+
+#newsletter{
+    background-color: rgb(68, 68, 67);
+   height: 200px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+
+    
+   
+}
+#email{
+    width: 350px;
+    height: 70px;
+    border-radius: 10px;
+    font: 30px;
+}
+
+#newbtn{
+   margin-left: 0;
+}
+
+
+form{
+    float: right;
+    margin-right: 10px;
+}
+
+
+#news h3{
+padding: 50px 40px;
+    font-size: 40px;
+}
+#news p{
+    font-size: 20px;
+    padding-left: 40px;
+    color: aliceblue;
+}
+#news p span{
+    color: antiquewhite;
+}
+
+#productpage{
+    display: flex;
+    justify-content:start
+}
+#smallimg{
+    text-align: center;
+    
+}
+
+#img1, #img2, #img3, #img4{
+    height: 100px;
+    margin: 2px;
+}
+
+#productimg{
+height: 460px;
+padding: 5px;
+}
+#imgdiv{
+    padding: 50px;
+    padding-left: 100px;
+    
+}
+#gap{
+    height: 100px;
+}
+#productinfo{
+    text-align: left;
+    margin-right: 300px;
+padding-top: 50px;
+
+
+}
+#productname{
+    font-size: 40px;
+    padding-top: 50px;
+}
+#productinfo #price{
+font-size: 25px;
+font-weight: 900;
+color: rgb(255, 144, 47);
+margin: 0;
+padding: 0;
+}
+
+#productdata{
+    color: rgb(62, 62, 62);
+line-height: 1.5;
+font-size: 15px;
+
+}
+#productinfo form button{
+    height: 50px;
+    width: 150px;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    
+}
+#productinfo form{
+    text-align: left;
+    float: left;
+    margin-bottom: 50px;
+}
+#productinfo form input{
+    width: 40px;
+    height: 40px;
+   background-color: blanchedalmond;
+   padding: 2px;
+}
+#productinfo #data{
+    display: block;
+    float: left;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+gap: 10px;
+justify-content: space-between;
+padding: 20px;
+}
+
+.fbold {
+    font-weight: bolder;
+    margin: 10px 0px;
+    font-size: larger;
+}
+
+#follow{
+    width: 50px;
+
+}
+#fimg img{
+    width: 100px;
+}
+
+#footer div{
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
